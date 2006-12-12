@@ -1,0 +1,45 @@
+*exUtility-Install.txt*	Plugin for tag selection
+
+Author: Wu Jie  (GayaEcai@N163I.UScom)
+		(remove GENIUS from Wu Jie's email before using)
+For Vim version 6.0 and above
+Last change: 2006 December 10
+
+
+1. Installation					|exUtility-Installation|
+
+==============================================================================
+1. Installation~
+                                                *exUtility-Installation*
+1.1. Files~
+
+The exUtility have these files:
+>
+	plugin\exEnvironmentSetting.vim
+	       exGlobalSearch.vim
+	       exSymbolTable.vim
+	       exTagSelect.vim
+	       exWindow.vim
+
+	doc\exUtility-exEnvironmentSetting.txt 
+	    exUtility-exGlobalSearch.txt       
+	    exUtility-exSymbolTable.txt
+	    exUtility-exTagSelect.txt
+	    exUtility-Install.txt
+<
+1.2. Copy the file into your vim-runtime path~
+	copy all the file into your vim-runtime path
+
+1.3. After install you should read~
+	exUtility have a lot of docment, but don't woryy about this. We wrote
+	a quick-start section for user to easy star up the plugin.
+	Read the quick-start section in each doc file first.
+	We recommend you read them in this order:
+>
+        exUtility-exTagSelect.txt           
+        exUtility-exGlobalSearch.txt        
+        exUtility-exSymbolTable.txt         
+	exUtility-exEnvironmentSetting.txt  
+<
+
+ vim:ts=8 sw=8 noexpandtab tw=78 ft=help:

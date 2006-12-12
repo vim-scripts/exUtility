@@ -1,0 +1,25 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1729
+
+The original idea to develop this plugin is to enhance the vim, as an IDE like editor.
+The plugin has the following features:
+
+    Global Search 
+        1: Display global search result.
+        2: The search result can be edit and batch select into a quick view window. 
+        3: Display the search result history.
+
+    Tag Select
+        1: Display tag preview and have good ui for user to select tags
+        2: Display tag stack and code-line preview for easy pop stack, re-entry stack, re-select tags.Good ui for user to easy track code.
+
+    Symbol List
+        1: Display the symbols based on the tags-file
+        2: Pick up symbol pattern and copy it into quick-view window
+        3: Symbol tag jump
+
+    Environment Setting
+        1: Automatically generate project
+        2: Variable setting
+        3: Multi-projects support
+                                                *exUtility-Contact*
+
