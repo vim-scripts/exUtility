@@ -159,7 +159,7 @@ function! s:exGS_SwitchWindow( short_title ) " <<<
     endif
 endfunction " >>>
 
-" --exGS_GotoSelectLine--
+" --exGS_Goto--
 "  goto select line
 function! s:exGS_Goto() " <<<
     let line = getline('.')
@@ -178,8 +178,18 @@ function! s:exGS_Goto() " <<<
 
     " start jump
     call g:ex_GotoEditBuffer()
-    exe 'silent e ' . file_name
+    if bufnr('%') != bufnr(file_name)
+        exe 'silent e ' . file_name
+    endif
     call cursor(line_num, 1)
+
+    " jump to the pattern if the code have been modified
+    let pattern = strpart(line, idx+2)
+    let pattern = '\V' . pattern
+    if search(pattern, 'w') == 0
+        call g:ex_WarningMsg('search pattern not found: ' . pattern)
+    endif
+
     call g:ex_HighlightObjectLine()
     exe 'normal zz'
 

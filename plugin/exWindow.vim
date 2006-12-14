@@ -357,8 +357,9 @@ function! g:ex_GotoExCommand(full_file_name, ex_cmd) " <<<
 
     " start jump
     let file_name = escape(a:full_file_name, ' ')
-    exe 'silent e ' . file_name
-
+    if bufnr('%') != bufnr(file_name)
+        exe 'silent e ' . file_name
+    endif
 
     " cursor jump
     " if ex_cmd is digital, just set pos of it

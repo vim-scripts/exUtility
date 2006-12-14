@@ -4,8 +4,7 @@ Author: Wu Jie  (GayaEcai@N163I.UScom)
 		(remove GENIUS from Wu Jie's email before using)
 Maintainer: Wu Jie  (GayaEcai@N163I.UScom)
 		    (remove GENIUS from Wu Jie's email before using)
-            Yu Jian Rong  ()
-		    	  (remove  from Yu Jian Rong's email before using)
+            Yu Jian Rong  (YuJianrong[at]GMail.com)
 For Vim version 6.0 and above
 Last change: 2006 December 10
 
